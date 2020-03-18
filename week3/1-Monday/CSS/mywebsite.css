@@ -1,0 +1,48 @@
+body{
+    font-family: 'Rajdhani', sans-serif;
+    background-color: grey;
+}
+*{
+    color: black;
+}
+
+#name{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#pic{
+    margin-left: 600px;
+    margin-bottom: 80px;
+}
+
+.contents{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 730px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.social{
+    /* font-family: 'Rajdhani', sans-serif;; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0;
+    justify-content: space-around;
+}
+
+#food{
+    margin-bottom: 30px;
+}
+
+#season{
+    margin-bottom: 30px;
+}
+
+#interests{
+    margin-bottom: 30px;
+}

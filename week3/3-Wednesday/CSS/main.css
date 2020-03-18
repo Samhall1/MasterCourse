@@ -1,0 +1,157 @@
+/* The one below will target the first child */
+ul li:first-child{
+    color:orange;
+}
+
+/* The one below will target last child */
+ul li:last-child{
+    color:blue;
+}
+
+/*The one below will target the number you type in  */
+
+ul li:nth-child(3){
+    color:green;
+}
+
+/* The one below will target the number you type in  */
+ul li:nth-child(2){
+    color:yellow;
+}
+
+/* This will only take up the neccessary space that it requires and wont take up the whole page, you can add as much as you want it will only use what you need */
+/* The padding will allow space on the top, down, left and right  */
+h1{
+    display:inline-block;
+    background-color: orange;
+    /* padding-top:20px;
+    padding-right:50px;  */
+    /* padding: 20px 50px 20px 50px; */
+    padding: 20px 50px;
+    /* border: 2px solid black; */
+    border: 4px dashed blue;
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-left: 80px;
+    border-radius: 20px;
+}
+/* border-radius rounds off the edge of the border */
+/* Margin moves other elements away form you 
+margin: top right bottom left */
+/* padding: top right bottom left << do not add , */
+/* padding: 20px 50px */
+/* padding: ^^^ left & right, top & bottom */
+/* This will get inline with the h1 if there is room  */
+p{
+    display:inline-block;
+}
+
+
+#myDiv{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: royalblue;
+}
+
+#secondDiv{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+/* display: inline-block will put everything on the same line if there is space */
+
+#danger{
+    color: red;
+}
+/* This will access the id you targeted and made the writing color */
+
+.parent{
+    display:inline-block;
+    background-color: orange;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+/* Position relative will allow you to move the child element around in the parent element  */
+/* You can only give 2 values to position relative, you cant use top and bottom at the same time
+you can use top and left/ bottom and right etc same with left or right cant be left and right  */
+
+.parent p {
+    display: block;
+    text-align: center;
+}
+/* Parent p will target the paragraph inside your div parent class */
+/* Text align will centre your writing */
+
+.child{
+    display:inline-block;
+    background-color:blue;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right:210px;
+    bottom:205px;
+}
+/* the left:0 will start at the top left top:0; will keep it in the top */
+/* position absolute will allow you to move the child class around inside parent it is floating because you assigned it absolute  */
+/* This is 2 divs one inside the other .parent and .child */
+
+.myBackground{
+    height:400px;
+    background-image: url('../moon.webp');
+    background-repeat: no-repeat;
+    border: 3px solid black;
+    background-size: contain;
+    background-size: cover;
+    background-position: -50px -100px;
+}
+/*background-position: 50px 100px; is background-position: (left)50px (right)100px;  using -100px will do the oppsosite  */
+/* my div will be completley covered by the image */
+/* I can see all my image by using the background-size: contain;  */
+/* The background-repeat no repeat will not repeat it, there is loads of options look at website > squoosh to min/max the size of image  */
+
+.mainDiv{
+background-color: orange;
+height: 500px;
+padding: 50px 100px;
+}
+/* The padding will give the content of the main div the children wont touch the parent /left right top and bottom padding: 50px 100px; */
+
+.first, .second{
+    height: 100px;
+    background-color: blue;
+    margin-bottom: 50px;
+}
+/* margin-bottom will give both the divs first/second to have a margin of 50 */
+/* by using the .first, .second you can target both divs inside your main div*/
+
+@media only screen and (max-width:1024px){
+    .second{
+        background-color: red;
+    }
+}
+/* This will access most laptops and some tablets that are pro ^^^ */
+
+
+@media only screen and (max-width:768px){
+    .second{
+        background-color: red;
+    }
+}
+
+/*  ^^^This is if it goes inbetween 500px and 768px it will change red the second div this is for ipad/tablet
+768px will target most of the tablets */
+
+@media only screen and (max-width:500px){
+    .first{
+        background-color: yellow;
+    }
+    .second{
+        background-color: pink;
+    }
+}
+/* ^^^ is if goes below 500px it will change the colour od the first div to yellow this is for mobile
+500px will cover most smart phones */
+

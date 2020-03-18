@@ -1,0 +1,57 @@
+*{
+color:green;
+}
+/* Star will grab all the elemts on the page  */
+
+body{
+    background-color: grey;
+}
+
+h1{
+    background-color: red;
+    color:black;
+}
+/* This will grab all the h1 elements */
+
+
+#main-title{
+color:yellow;
+}
+/* This will apply only to the one you have typed the main-title in to for example h1 in your html file */
+
+.highlights{  
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Bellota', cursive;
+}
+/* this will grab multipul things you want to high light */
+
+.important{
+    color:blue;
+    
+}
+/* you can add multipul classes in one section it would look like this >> <p class="highlights important"> */
+
+/* google fonts > pick one > copy the link > add the link to the html file > then go back to google font > copy the css bit that should say font-family and paste it where ever you need to  */
+
+h4{
+    color:orange;
+}
+
+#primary h4 {
+    color:red;
+}
+/* selecting div with id of primary it will look inside for any h4 because its referenced after primary */
+
+li{
+    color:blue;
+    list-style: none;
+    /* list style will get rid of the bullet points */
+}
+/* This will target all lists and change them blue */
+
+#primary ul li {
+    color:yellow;
+}
+/* This will be very specific in what you want to access so it will access the primary the unordered list then the list  */
+

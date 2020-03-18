@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    /* background-color: grey; */
+}
+
+
+#heading{
+    margin: 50px 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+#keycode{
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+    font-size: larger;
+  
+}
+
+.events{
+    display: flex;
+    margin-top: 350px;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.events p.one{
+   border-width: 5px;
+   
+}

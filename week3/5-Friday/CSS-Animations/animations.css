@@ -1,0 +1,60 @@
+/* .square {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    /* transition: border-radius 0.5s;
+    transition-timing-function: ease; 
+    transition: all 1s ease;
+} */
+/* Transition is saying how long it will take for your square to transition into a border-radius when you hover over it  */
+/* transition timing function is how smooth it will do it  */
+/* Google css transition-timing-function w3schools is a good one for knowledge on this usbject */
+/* 1s ease means it will take 1s to transition from red to blue and into a circle */
+
+/* .square:hover {
+    border-radius: 50%;
+    background-color: blue;
+} */
+/* This will change a square into a circle */
+/* Because i have targeted transition all, it will do everything i want it to do inside the hover */
+
+/* @keyframes yourAnimationName {           always start with @keyframes followed by your 
+    0% {
+    property: value;
+    }
+    100% {
+    Property: value;
+    } 
+}*/
+
+.square {
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+}
+/* animation name is the value you in put in to @keyframes */
+.square:hover {
+    border-radius: 50%;
+    animation-name: button;
+    animation-duration: 4s;
+}
+
+@keyframes button {
+    0% {
+        background-color: blueviolet;
+        box-shadow: 6px 6px 0 darkgrey;
+
+    }
+
+    50% {
+        background-color: aqua;
+        box-shadow: 6px 6px 0 darkslategrey;
+
+    }
+
+    100% {
+        background-color: whitesmoke;
+        box-shadow: 6px 6px 0 black;
+
+    }
+}
